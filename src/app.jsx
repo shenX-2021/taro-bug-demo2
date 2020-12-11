@@ -12,13 +12,13 @@ import './app.scss'
 class App extends Component {
 
   componentDidMount () {
-    console.log('app mount')
-    setTimeout(() => {
-      Taro.redirectTo({url: '/pages/index/index'});
-    });
   }
 
   componentDidShow () {
+    console.log('app show')
+    setTimeout(() => {
+      Taro.redirectTo({url: '/pages/index/index'});
+    }, );
   }
 
   componentDidHide () {}

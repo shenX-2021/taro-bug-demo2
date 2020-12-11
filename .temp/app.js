@@ -35,14 +35,15 @@ mountApis({
 class App extends Component {
 
   componentDidMount() {
-    console.log('app mount');
-    setTimeout(() => {
-      Taro.redirectTo({ url: '/pages/index/index' });
-    });
     this.componentDidShow();
   }
 
-  componentDidShow() {}
+  componentDidShow() {
+    console.log('app show');
+    setTimeout(() => {
+      Taro.redirectTo({ url: '/pages/index/index' });
+    });
+  }
 
   componentDidHide() {}
 
